@@ -1,61 +1,56 @@
 @use "../util";
 
-.novidades{
-    background-color: util.$neutro-4;
-    font-size: util.$font-size;
-    padding: 2.5rem 2rem;
-    h2{
+.novidades {
+  background-color: util.$neutro-4;
+  font-size: util.$font-size;
+  padding: 2.5rem 2rem;
+  h2 {
+    color: util.$cor-primaria;
+    font-size: 2em;
+    margin-bottom: 3rem;
+  }
+  ul li {
+    h3 {
+      color: util.$neutro-1;
+      font-size: 1.3em;
+      margin-bottom: 1rem;
+      &:hover {
         color: util.$cor-primaria;
-        font-size: 2em;
-        margin-bottom: 3rem;
-        
+      }
     }
-    ul li{
-        h3{
-            color: util.$neutro-1;
-            font-size: 1.3em;
-            margin-bottom: 1rem;
-            &:hover{
-            color: util.$cor-primaria;
-        }
-        }
-        p{
-            color: util.$neutro-2;
-            line-height: 1.6;
-        }
-        &:not(:nth-child(3n)){
-            border-bottom: 1px solid util.$neutro-2;
-            margin-bottom: 3rem;
-            padding-bottom: 3rem;
-        }
+    p {
+      color: util.$neutro-2;
+      line-height: 1.6;
     }
-
-
+    &:not(:nth-child(3n)) {
+      border-bottom: 1px solid util.$neutro-2;
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
 }
 
-@media (min-width: 768px){
-    .novidades{
-        h2{
-            font-size: 3em;
-            margin-bottom: 0;
-        }
-        ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            height: 90%;
-
-            li a{
-                h3{
-                    font-size: 1.8em;
-                    margin-bottom: 1rem;
-                }
-                p{
-                    font-size: 1.4em;
-                }
-            }
-        }
-        
+@media (min-width: 768px) {
+  .novidades {
+    h2 {
+      font-size: 3em;
+      margin-bottom: 0;
     }
-}
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 90%;
 
+      li a {
+        h3 {
+          font-size: 1.8em;
+          margin-bottom: 1rem;
+        }
+        p {
+          font-size: 1.4em;
+        }
+      }
+    }
+  }
+}

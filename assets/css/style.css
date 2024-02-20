@@ -33,7 +33,7 @@ body {
   body {
     scale: 0.85;
     padding: 0;
-    height: 100vh;
+    height: 82.5vh;
   }
 }
 
@@ -64,7 +64,6 @@ header .menu nav .lista-menus li a:hover {
     width: 32px;
     height: 32px;
     display: block;
-    z-index: 10;
   }
   header .menu__botao img {
     width: 100%;
@@ -72,7 +71,6 @@ header .menu nav .lista-menus li a:hover {
   header .menu nav {
     position: absolute;
     background-color: hsl(36, 100%, 99%);
-    z-index: 0;
     width: 60vw;
     height: 100vh;
     right: 0;
