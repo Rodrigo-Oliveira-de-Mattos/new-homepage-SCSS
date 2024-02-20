@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+    rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#"><img src="assets/images/logo.svg" alt="Logo da empresa" /></a>
+      <div class="menu">
+        <button class="menu__botao">
+          <img id="menu-hamburguer" src="assets/images/icon-menu.svg">
+        </button>
+        <nav id="nav" class="sumido">
+          <ul class="lista-menus">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
+      </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <picture class="img-web">
+          <source
+            srcset="assets/images/image-web-3-desktop.jpg"
+            media="(min-width: 768px)"
+          />
+          <img
+            src="assets/images/image-web-3-mobile.jpg"
+            alt="Imagem decorativa"
+          />
+        </picture>
+        <div class="informacoes-principais">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div class="informacoes-principais__paragrafo">
+            <p>We dive
+              into the next evolution of the web that claims to put the power of the
+              platforms back into the hands of the people. But is it really fulfilling its
+              promise?
+            </p>
+            <a href="#" class="informacoes-principais__paragrafo--leia-mais">read more</a>
+          </div>
+        </div>
+      </section>
+      <section class="novidades">
+        <h2>New</h2>
+        <ul>
+          <li>
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </li>
+          <li>
+            <h3>The Downsides of AI Artistry</h3>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </li>
+          <li>
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that
+              means.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="outras-info">
+        <ul>
+          <li>
+            <img src="assets/images/image-retro-pcs.jpg" alt="Retro pcs">
+            <div class="textos-outras-info">
+              <span>01</span>
+              <h3 class="textos-outras-info__titulo">Reviving Retro PCs</h3>
+              <p class="textos-outras-info__paragrafo">What happens when old PCs are given modern
+                upgrades?</p>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/image-top-laptops.jpg" alt="Melhores laptops">
+            <div class="textos-outras-info">
+              <span>02</span>
+              <h3 class="textos-outras-info__titulo">Top 10 Laptops of 2022</h3>
+              <p class="textos-outras-info__paragrafo">Our best picks for various needs and budgets.</p>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/image-gaming-growth.jpg" alt="Um controle de playstation">
+            <div class="textos-outras-info">
+              <span>03</span>
+              <h3 class="textos-outras-info__titulo">The Growth of Gaming</h3>
+              <p class="textos-outras-info__paragrafo">How the pandemic has sparked fresh
+                opportunities.</p>
+            </div>
+          </li>
+        </ul>
+        
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

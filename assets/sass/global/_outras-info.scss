@@ -1,0 +1,51 @@
+@use "../util";
+
+.outras-info{
+    @media(min-width: 768px){
+        flex-direction: row;
+        grid-column: 1 / span 3;
+        height: fit-content;
+    }
+}
+
+.outras-info ul{
+    display: grid;
+    gap: 4rem;
+    margin-bottom: 6rem;
+
+    @media(min-width: 768px){
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    li{
+        flex: 1;
+        display: flex;
+        
+        gap: 2rem;
+        img{
+            height: 13rem;
+        }
+
+        .textos-outras-info{
+            font-size: util.$font-size;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            span{
+                font-size: 2em;
+                color: util.$neutro-2;
+            }
+            h3{
+                font-size: 1em;
+                color: util.$neutro-4;
+                font-size: 1.2em;
+            }
+            p{
+                color: util.$neutro-3;
+                line-height: 1.5;
+            }
+        }
+    }
+
+
+}

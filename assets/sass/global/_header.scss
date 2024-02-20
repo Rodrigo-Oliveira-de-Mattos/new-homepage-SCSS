@@ -1,0 +1,74 @@
+@use "../util";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 33px;
+  a img {
+    width: 5rem;
+  }
+  margin-bottom: 3rem;
+
+  .menu {
+    nav .lista-menus li a{
+        &:hover {
+            color: util.$cor-primaria;
+      }
+    }
+
+    @media (max-width: 767px) {
+      &__botao {
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+        display: block;
+        z-index: 10;
+        img {
+          width: 100%;
+        }
+      }
+      position: relative;
+      nav {
+        &.sumido {
+          display: none;
+        }
+        position: absolute;
+        background-color: util.$neutro-1;
+        z-index: 0;
+        width: 60vw;
+        height: 100vh;
+        right: 0;
+        top: 6rem;
+        padding: 5rem 3rem;
+        font-size: util.$font-size * 1.3;
+        display: block;
+
+        li {
+          padding-bottom: 4rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .menu {
+      &__botao {
+        display: none;
+      }
+      nav {
+        .lista-menus {
+          display: flex;
+
+          gap: 6rem;
+          li a {
+            color: util.$neutro-4;
+            font-size: util.$font-size;
+            
+          }
+        }
+      }
+    }
+  }
