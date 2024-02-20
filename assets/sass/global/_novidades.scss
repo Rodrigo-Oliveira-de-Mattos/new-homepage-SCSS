@@ -15,6 +15,9 @@
             color: util.$neutro-1;
             font-size: 1.3em;
             margin-bottom: 1rem;
+            &:hover{
+            color: util.$cor-primaria;
+        }
         }
         p{
             color: util.$neutro-2;
@@ -42,9 +45,7 @@
             justify-content: space-evenly;
             height: 90%;
 
-            li{
-                
-
+            li a{
                 h3{
                     font-size: 1.8em;
                     margin-bottom: 1rem;

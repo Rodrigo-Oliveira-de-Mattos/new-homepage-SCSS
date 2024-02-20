@@ -187,6 +187,9 @@ main {
   font-size: 1.3em;
   margin-bottom: 1rem;
 }
+.novidades ul li h3:hover {
+  color: hsl(35, 77%, 62%);
+}
 .novidades ul li p {
   color: hsl(233, 8%, 79%);
   line-height: 1.6;
@@ -208,11 +211,11 @@ main {
     justify-content: space-evenly;
     height: 90%;
   }
-  .novidades ul li h3 {
+  .novidades ul li a h3 {
     font-size: 1.8em;
     margin-bottom: 1rem;
   }
-  .novidades ul li p {
+  .novidades ul li a p {
     font-size: 1.4em;
   }
 }
@@ -235,30 +238,33 @@ main {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.outras-info ul li {
+.outras-info ul li a {
   flex: 1;
   display: flex;
   gap: 2rem;
 }
-.outras-info ul li img {
+.outras-info ul li a img {
   height: 13rem;
 }
-.outras-info ul li .textos-outras-info {
+.outras-info ul li a .textos-outras-info {
   font-size: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.outras-info ul li .textos-outras-info span {
+.outras-info ul li a .textos-outras-info span {
   font-size: 2em;
   color: hsl(233, 8%, 79%);
 }
-.outras-info ul li .textos-outras-info h3 {
+.outras-info ul li a .textos-outras-info h3 {
   font-size: 1em;
   color: hsl(240, 100%, 5%);
   font-size: 1.2em;
 }
-.outras-info ul li .textos-outras-info p {
+.outras-info ul li a .textos-outras-info h3:hover {
+  color: hsl(5, 85%, 63%);
+}
+.outras-info ul li a .textos-outras-info p {
   color: hsl(236, 13%, 42%);
   line-height: 1.5;
 }/*# sourceMappingURL=style.css.map */

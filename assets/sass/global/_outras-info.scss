@@ -17,7 +17,7 @@
         grid-template-columns: repeat(3,1fr);
     }
 
-    li{
+    li a{
         flex: 1;
         display: flex;
         
@@ -39,6 +39,10 @@
                 font-size: 1em;
                 color: util.$neutro-4;
                 font-size: 1.2em;
+
+                &:hover{
+                    color: util.$cor-secundaria;
+                }
             }
             p{
                 color: util.$neutro-3;
